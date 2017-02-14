@@ -1,6 +1,206 @@
 <!DOCTYPE html>
 <html>
 <body>
-Hello world!
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
+<input class="but1" value="1" name="btn1" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but2" value="2" name="btn2" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but3" value="3" name="btn3" type="button" style="height:25px;width:50px;margin-left: 5px">
+</div>
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
+<input class="but4" value="4" name="btn4" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but5" value="5" name="btn5" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but6" value="6" name="btn6" type="button" style="height:25px;width:50px;margin-left: 5px">
+</div>
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
+<input class="but7" value="7" name="btn7" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but8" value="8" name="btn8" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but9" value="9" name="btn9" type="button" style="height:25px;width:50px;margin-left: 5px">
+</div>
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
+<input class="but0" value="0" name="btn0" type="button" style="height:25px;width:50px;margin-left: 5px">
+</div>
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
+<input class="plus" value="+" name="plus" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="minus" value="-" name="minus" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="multy" value="*" name="multy" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="divide" value="/" name="divide" type="button" style="height:25px;width:50px;margin-left: 5px">
+</div>
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
+<input class="res" value="=" name="res" type="button" style="height:25px;width:50px;margin-left: 5px">
+</div>
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
+<input class="field" value="" name="field" style="height:25px;width:200px;margin-left: 5px">
+
+</div>
+<div>
+<img href="https://www.google.com.ua/" name= "perfectImg" src="Perfect.png" style="horizontal-align:right;visibility:hidden"/>
+</div>
+<script type="text/javascript">
+var myAct;
+var first;
+var second;
+var resOnScreen = 0;
+var imgDiv = document.getElementById("11111");
+var img = document.createElement("img");
+var field = document.getElementsByName('field')[0];
+var img = document.getElementsByName('perfectImg')[0];
+img.onclick = function() {
+    window.open('https://www.google.com.ua/', '_blank');
+};
+img.target = "_blank";
+//imgDiv.appendChild(img);
+//hideImg();
+showImg();
+function showImg(){
+img.style.visibility = 'visible';
+}
+function hideImg(){
+img.style.visibility = 'hidden';
+}
+document.getElementsByName("btn1")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn2")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn3")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn4")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn5")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn6")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn7")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn8")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn9")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("btn0")[0].addEventListener("click", function(){
+	if (resOnScreen != 0){
+	field.value = this.value;
+	resOnScreen = 0;
+	hideImg();
+	}
+	else{
+    field.value = field.value + this.value;
+	}});
+document.getElementsByName("plus")[0].addEventListener("click", function(){
+		first = field.value;
+		field.value = "";
+		myAct = "+";
+	});
+document.getElementsByName("minus")[0].addEventListener("click", function(){
+		first = field.value;
+		field.value = "";
+		myAct = "-";
+	});
+document.getElementsByName("multy")[0].addEventListener("click", function(){
+		first = field.value;
+		field.value = "";
+		myAct = "*";
+	});
+document.getElementsByName("divide")[0].addEventListener("click", function(){
+		first = field.value;
+		field.value = "";
+		myAct = ":";
+	});
+document.getElementsByName("res")[0].addEventListener("click", function(){
+	second = field.value;
+	resOnScreen = 1;
+	showImg();
+	switch(myAct) {
+	case "+":
+		field.value = parseInt(first) + parseInt(second);
+		break;
+	case "-":
+		field.value = parseInt(first) - parseInt(second);
+		break;
+	case "*":
+		field.value = parseInt(first) * parseInt(second);
+		break;
+	case ":":
+		field.value = parseInt(first) / parseInt(second);
+		break;
+	default:
+		field.value = "Hello";
+	}});
+
+
+var button1 = parseInt(document.getElementsByName('btn1')[0].value);
+var button2 = parseInt(document.getElementsByName('btn2')[0].value);
+
+///field.value = "4444"
+
+
+	//window.alert(button1 + button2);
+//var buttonnode= document.createElement('input');
+
+
+
+
+</script>
 </body>
 </html>
