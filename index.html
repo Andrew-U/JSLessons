@@ -6,7 +6,7 @@ body {
 background-color: #4dc6ff;
 }
 </style>
-<div name="main" style="background-color:#ffffff;height:100%;position: relative;margin-right:500px;margin-left: 500px">
+<div name="main" style="background-color:#ffffff;height:100%;width:1000px;position: relative;margin:0 auto">
 <h1> Here is my calc </h1>
 <div style="text-align: center;margin-top: 0px;margin-bottom: 10px">
 <input class="but1" value="1" name="btn1" type="button" style="height:25px;width:50px;margin-left: 5px">
@@ -57,8 +57,6 @@ var img = document.createElement("img");
 var field = document.getElementsByName('field')[0];
 var main = document.getElementsByName('main')[0];
 var img = document.getElementsByName('perfectImg')[0];
-var heightR = $(window).height();
-main.style.height = heightR + "px";
 
 img.onclick = function() {
     window.open('https://www.google.com.ua/', '_blank');
