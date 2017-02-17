@@ -5,40 +5,78 @@
 body {
 background-color: #4dc6ff;
 }
+input {
+font-size: 18px;
+text-align: center;
+display: inline-block;
+color: #777674;
+font-weight: bold;
+vertical-align: center;
+text-decoration: none;
+text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+user-select: none;
+
+height:35px;
+width:60px;
+margin-left: 5px;
+outline: none;
+border-radius: 3px / 100%;
+  background-image:
+   linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+   linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+   background-repeat: no-repeat;
+   background-color: #66ccff;
+   background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+	box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+	a.button9:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  a.button9:active {
+  top: 1px;
+}
+}
+}
 </style>
+<<<<<<< HEAD
 <div name="main" style="background-color:#ffffff;height:100vh;width:1000px;position: relative;margin:0 auto">
+=======
+<div name="main" style="background-color:#ffffff;height:100vh;width: 1000px;position: relative;margin:0 auto">
+>>>>>>> master
 <h1> Here is my calc </h1>
 <div style="text-align: center;margin-top: 0px;margin-bottom: 10px">
-<input class="but1" value="1" name="btn1" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="but2" value="2" name="btn2" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="but3" value="3" name="btn3" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but1" value="1" name="btn1" type="button" >
+<input class="but2" value="2" name="btn2" type="button">
+<input class="but3" value="3" name="btn3" type="button">
 </div id="1" background=#4dc6ff>
 <div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
-<input class="but4" value="4" name="btn4" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="but5" value="5" name="btn5" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="but6" value="6" name="btn6" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but4" value="4" name="btn4" type="button">
+<input class="but5" value="5" name="btn5" type="button">
+<input class="but6" value="6" name="btn6" type="button">
 </div>
 <div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
-<input class="but7" value="7" name="btn7" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="but8" value="8" name="btn8" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="but9" value="9" name="btn9" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but7" value="7" name="btn7" type="button">
+<input class="but8" value="8" name="btn8" type="button" >
+<input class="but9" value="9" name="btn9" type="button" >
 </div>
 <div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
-<input class="but0" value="0" name="btn0" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="but0" value="0" name="btn0" type="button">
 </div>
 <div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
-<input class="plus" value="+" name="plus" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="minus" value="-" name="minus" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="multy" value="*" name="multy" type="button" style="height:25px;width:50px;margin-left: 5px">
-<input class="divide" value="/" name="divide" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="plus" value="+" name="plus" type="button">
+<input class="minus" value="-" name="minus" type="button">
+<input class="multy" value="*" name="multy" type="button">
+<input class="divide" value="/" name="divide" type="button">
 </div>
 <div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
-<input class="res" value="=" name="res" type="button" style="height:25px;width:50px;margin-left: 5px">
+<input class="res" value="=" name="res" type="button">
 </div>
 <div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
-<input class="field" value="" name="field" style="height:25px;width:200px;margin-left: 5px">
+<input class="field" value="" name="field" style="height:45px;width:250px">
 <div style="text-align: center;margin-top: 10px;margin-bottom: 10px">
-<input class="reset" value="RESET" name="reset" type="button" style="height:25px;width:70px;margin-left: 5px">
+<input class="reset" value="RESET" name="reset" type="button" style="width:80px">
 </div>
 </div>
 <body align="center">
